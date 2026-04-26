@@ -1,0 +1,53 @@
+HOW TO ADD A NEW BLOG POST
+=========================
+
+1. Create a new folder inside blog/ with a numeric name.
+   Folders MUST be three-digit numbers, incrementing by one:
+
+   blog/003/   (the next post after 002's)
+   blog/004/   (the one after that)
+   ...and so on.
+
+   IMPORTANT: always use the next available integer,
+   padded to 3 digits (000, 001, 002, 003, ...).
+   Posts appear in REVERSE order: highest number first
+   (newest) to lowest number last (oldest).
+
+2. Inside that folder, create a final.md file:
+
+   # Title of Your Post
+
+   Your content here in Markdown.
+
+   - Use `# Title` at the top. If you skip the `# ` line,
+     the folder name is used as the title.
+   - Standard Markdown works: **bold**, *italic*, links,
+     lists, images, etc.
+
+3. If your post has images, put them in a subfolder:
+
+   blog/003/immagini/my-pic.jpg
+
+   Then reference them in final.md like:
+
+   ![Alt text](immagini/my-pic.jpg)
+
+4. Run the builder from the root folder (ketnotes_website/):
+
+   python build_blog.py
+
+   This does three things:
+   - Generates blog/NNN/index.html (your rendered post)
+   - Updates blog/index.html (the blog listing page)
+   - Updates index.html (the "Blog!" section on your main page)
+
+5. That's it. Open index.html in a browser to check.
+
+NOTES:
+- Only final.md files are published. Drafts (e.g. my-draft.md)
+  are ignored.
+- Folders without a numeric prefix (e.g. blog/more/) are
+  pushed to the bottom of the list.
+- The substack links on the main page are placeholders
+  (href="..."). Edit those manually in index.html if you
+  publish on Substack, or update the build script.
