@@ -1,6 +1,6 @@
 body{
   margin: 0;
-  background:#FFFFF;
+  background:#FFFFFF;
   font-family: Verdana, Tahoma, serif;
 }
 
@@ -61,15 +61,8 @@ body{
   display: inline-block;
 }
 
-.blog{
-  width: 80%;
-  padding-left: 20px;
-  padding-right: 10px;
-  padding-top: 0px;
-  display: inline-block;
-}
 
-.About_me{
+.main{
   width: 80%;
   padding-left: 20px;
   padding-right: 10px;
@@ -135,10 +128,6 @@ nav li :hover{
   font-size: 0.9em;
 }
 
-.blog-list {
-  padding-left: 20px;
-  line-height: 1.6;
-}
 
 .CV{ 
   padding-left: 20px;
