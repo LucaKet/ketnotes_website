@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta charset="utf-8">
+<link href="style.css" rel="stylesheet" type="text/css">
+<title>Kramers degeneracy theorem</title>
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" id="MathJax-script"></script>
+</head>
+<body>
+
+<div class="text">
+<div class="left">
+
+<cite><a href="00.Index.html">Full index</a></cite>
+|
+<cite><a href="01.Index.html">Curated index</a></cite>
+<h2>Kramers degeneracy theorem</h2>
+
+<hr>
+
+<p>
+<b>Statement</b>:
+In a system <b>of spin $1/2$ particles</b> (or in general half integer spin)
+that has time reversal (TR) symmetry, each state is doubly degenerate;
+meaning that for each eigenenergy $E(k)$ there exists $2$ eigenstates $|\psi\rangle$ and
+$|\phi\rangle$ that both have $E(k)$ as eigenvalue.
+</p>
+
+<p>
+<b>Proof</b>:
+Having TR symm. means that
+\[
+[H, T] = [T, H] = 0 \tag{1}
+\]
+where $T$ is a <a href="Time.reversal.representation.html">Time-reversal representation</a> in appropriate operator form.
+Consequently if $|\psi\rangle$ is an eigenstate of $H$, so will also be $|T\psi\rangle$.
+Now compute
+\[
+\langle\psi|T\psi\rangle: \tag{2}
+\]
+using the anti-unitary nature of $T$ we may write:
+\[
+\langle\psi|T \psi\rangle = \langle T T \psi |T\psi \rangle = - \langle\psi|T\psi\rangle \tag{3}
+\]
+where in the first equality we used $\langle v|u\rangle = \langle Tu|Tv\rangle$,
+in the second $T T = -1$.
+We now have two orthogonal states (inner product is $0$) which have the same energy $\rightarrow$ we
+have proved Kramer's theorem.
+</p>
+
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta charset="utf-8">
+<link href="style.css" rel="stylesheet" type="text/css">
+<title>Topological superconductors in one and two dimensions (Bernevig, Ch. 16)</title>
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" id="MathJax-script"></script>
+</head>
+<body>
+
+<div class="text">
+<div class="left">
+
+<cite><a href="00.Index.html">Full index</a></cite>
+|
+<cite><a href="01.Index.html">Curated index</a></cite>
+<h2>Topological superconductors in one and two dimensions (Bernevig, Ch. 16)</h2>
+
+<hr>
+
+<blockquote>
+A. Bernevig, &ldquo;Topological insulators and topological superconductors&rdquo;, Ch. 16: topological superconductors in one and two dimensions.
+</blockquote>
+
+<hr>
+
+<p>
+<b>pg194: </b>The first step in the construction of the <a href="BdG.Hamiltonian.html">BdG Hamiltonian</a> is to <b>double the dof</b>!
+this means going from a description in terms of creation and destruction operators (each with their
+spin and momentum) to one where the main object is the <b>spinor</b>
+\[
+\psi = (C_{p, up}, C_{p, down}, C^\dagger_{-p, up}, C^\dagger_{-p, down}) \tag{1}
+\]
+which contains creation operators of $-p$ momentum and destruction operators of momentum $p$
+with all $4$ possible combinations of spin.
+</p>
+
+<p>
+<b>pg194: </b>written this way the hamiltonian has a symmetry with respect to the operator
+\[
+C = \tau_x \otimes 1_{2\times2} \tag{2}
+\]
+namely
+\[
+C H(-p) C^{-1} = -H(p) \ \ \leftrightarrow \ \ H(p) \rightarrow -H(-p) \ \text{under } C \tag{3}
+\]
+this can be easily seen by realizing that
+</p>
+<ul>
+<li>$C H(-p)$ has the block structure of $C$, with the lower block of $H$ in the (0,1)
+    block of $C$ and the higher block of $H$ in the (1,0) block of $C$</li>
+<li>$C^{-1} = C$, thus the second matrix multiplication gives back $H$, but with the blocks reversed</li>
+</ul>
+<p>
+this symmetry is known as <b>particle&ndash;hole</b> symmetry, as it exchanges the sign of energy and momentum
+(see <a href="Particle.hole.symm.BdG.Ham.html">Particle-hole symmetry of the BdG Hamiltonian</a>).
+</p>
+
+<p>
+<b>pg196: </b>The pairing potential for the case of spinless (spin polarized) fermions <b>can not</b> be of s-wave type!
+The pairing in the spinless fermion case is between positive and negative momentum particles:
+\[
+H_\delta = \Delta(p) C^\dagger_p C^\dagger_{-p} + \mathrm{h.c.} \ \ ; \ \ (C^\dagger_p)^* = C_{-p} \tag{4}
+\]
+</p>
+
+<p>
+<b>pg196: </b>One must take care and notice what the $\psi$ operator looks like that makes the hamiltonian be a $2\times2$
+matrix: in the case of SC it has creation and annihilation operators for particles of the same kind,
+in the Dirac insulators they are annihilation operators of particles of different kind. This is important
+because otherwise the hamiltonian looks similar (or the same in the $m \rightarrow \infty$ limit), thus it gives
+the physical interpretation of the difference between these systems. The form of $\psi$ is the result
+of the redundancy in the construction of the BdG hamiltonian.
+</p>
+
+</div>
+</div>
+
+</body>
+</html>

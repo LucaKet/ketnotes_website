@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta charset="utf-8">
+<link href="style.css" rel="stylesheet" type="text/css">
+<title>BdG equation</title>
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" id="MathJax-script"></script>
+</head>
+<body>
+
+<div class="text">
+<div class="left">
+
+<cite><a href="00.Index.html">Full index</a></cite>
+|
+<cite><a href="01.Index.html">Curated index</a></cite>
+<h2>BdG equation</h2>
+
+<hr>
+
+<p>
+Starting from the construction of the $4\times4$ <a href="BdG.Hamiltonian.html">BdG Hamiltonian</a> one
+wishes to find its spectrum through the eigenvalue equation
+\[
+H(k) \vec{v}(k) = E(k) \vec{v}(k), \tag{1}
+\]
+where:
+\[
+\vec{v}(k) = (u_s(k), v_s(k)) \tag{2}
+\]
+is the eigenvector, where each entry is itself a vector
+of length $2$: $u_s(k) = [u_1(k), u_2(k)]^T_s$.
+</p>
+
+<p>
+Note the (arbitrary) form of the dependencies on the momentum $k$:
+these are such because of the basis in which we are constructing the $4\times4$ hamiltonian
+starting from the original interacting theory:
+\[
+[C^\dagger(k)_s, C(-k)_s], \tag{3}
+\]
+which, written with the original creation/annihilation operators are
+\[
+C^\dagger(k)_s = [C^\dagger(k)_{\uparrow}, C^\dagger(k)_{\downarrow}] \tag{4}
+\]
+and so for $C(-k)_s$.
+(This is the case in which a Cooper pair is formed by one up and one down spin).
+</p>
+
+</div>
+</div>
+
+</body>
+</html>

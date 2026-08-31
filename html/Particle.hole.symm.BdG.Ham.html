@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta charset="utf-8">
+<link href="style.css" rel="stylesheet" type="text/css">
+<title>Particle-hole symmetry of the BdG Hamiltonian</title>
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" id="MathJax-script"></script>
+</head>
+<body>
+
+<div class="text">
+<div class="left">
+
+<cite><a href="00.Index.html">Full index</a></cite>
+|
+<cite><a href="01.Index.html">Curated index</a></cite>
+<h2>Particle-hole symmetry of the BdG Hamiltonian</h2>
+
+<hr>
+
+<p>
+The artificial doubling of the system in the construction of the <a href="BdG.Hamiltonian.html">BdG Hamiltonian</a> introduces
+a new &ldquo;symmetry&rdquo;. (air quotes as the symmetry is only a consequence of the doubling of the system).
+Namely one finds that the Hamiltonian so defined respects
+\[
+-H(k) = C H(-k) C^{-1} \tag{1}
+\]
+where
+\[
+C = (\tau_x \otimes 1_{2\times2}) K, \tag{2}
+\]
+$K$ being the complex conjugation operator.
+This symmetry becomes nonetheless manifestly physical once the excitations
+of the SC are studied, as they are indeed particle-antiparticle mixtures
+as described in <a href="BdG.Hamiltonian.html">BdG Hamiltonian</a>.
+</p>
+
+<p>
+Looking at the <a href="BdG.equation.html">BdG equation</a>:
+\[
+H(k) [u(k), v^*(-k)]^T = E(k) \cdot [u(k), v^*(-k)]^T, \tag{3}
+\]
+which may also be written after the application of the $C$ operator:
+we start by writing the equation for $-k$ instead of $k$ and by inserting identities
+in the form of $CC^{-1}$
+(calling $[u(k), v^*(-k)]^T = \vec{v}(k)$):
+\[
+C^{-1} [C (H(-k))C^{-1}] C \vec{v}(-k) = E(-k) \vec{v}(-k) \tag{4}
+\]
+\[
+C^{-1} (-H(k)) C\vec{v}(-k) = E(-k) \vec{v}(-k) \tag{5}
+\]
+and finally, by passing $-C^{-1}$ to the r.h.s. as $-C$ acting on $\vec{v}(-k)$, we obtain:
+\[
+H(k) C\vec{v}(-k) = -E(-k) C\vec{v}(-k). \tag{6}
+\]
+This implies that the four (or eventually $4N$, where $N$ is the number of orbital d.o.f.)
+eigen-energies are not independent, rather they are
+\[
+E_1(k), E_2(k), -E_1(-k), -E_2(-k); \tag{7}
+\]
+in light of the particle hole symmetry with which the hamiltonian was constructed to begin with
+you only need to find $2$ eigen energies to have access to the full spectrum.
+</p>
+
+<p>
+Furthermore, this implies an important feature of the spectrum of the hamiltonian, namely that
+it will necessarily be symmetric with respect to $E = 0$!
+This is an important result, which forces us to find a quantity (topological invariant)
+to differentiate hamiltonians that undergo gap closing different from just counting states below the
+$0$ energy line (this number remains constant, because if one band crosses from above, there will be another
+crossing from below). The resulting quantity is called Pfaffian (<a href="Pfaffian.invariant.html">Pfaffian invariant</a>)
+</p>
+
+</div>
+</div>
+
+</body>
+</html>

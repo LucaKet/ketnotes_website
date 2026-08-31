@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta charset="utf-8">
+<link href="style.css" rel="stylesheet" type="text/css">
+<title>Berry curvature as a magnetic field</title>
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" id="MathJax-script"></script>
+</head>
+<body>
+
+<div class="text">
+<div class="left">
+
+<cite><a href="00.Index.html">Full index</a></cite>
+|
+<cite><a href="01.Index.html">Curated index</a></cite>
+<h2>Berry curvature as a magnetic field</h2>
+
+<hr>
+
+<p>
+In analogy with E&amp;M, one can take the <b>Gauge dependent</b> definition of the Berry potential <a href="Berry.potential.html">Berry potential</a>
+and define a <b>Gauge independent</b> quantity, referred to as <b>Berry curvature</b>.
+</p>
+
+<p>
+It is defined &mdash; once again as the $B$ field is defined as the curl of the E&amp;M potential &mdash;
+starting from the curl of the Berry potential:
+\[
+V = \nabla \times (-i A) \tag{1}
+\]
+where the &ldquo;-i&rdquo; is a convention, $A$ is the <a href="Berry.potential.html">Berry potential</a>.
+from this vector $V$ one obtains the Berry curvature by contraction with the Levi-Civita symbol:
+\[
+V_i = \epsilon_{ijk} \ F_{jk} \ \ \rightarrow \ \ F_{jk} \equiv \langle\nabla_j n | \nabla_k n\rangle - (j \leftrightarrow k) \tag{2}
+\]
+</p>
+
+<p>
+Note:
+The math makes more sense once you remember that
+\[
+V_i = \nabla_j \langle n|\nabla_k|n\rangle - (j \leftrightarrow k) = 2 \left( \langle\nabla_j n | \nabla_k n\rangle - (j \leftrightarrow k) \right) \tag{3}
+\]
+</p>
+
+</div>
+</div>
+
+</body>
+</html>

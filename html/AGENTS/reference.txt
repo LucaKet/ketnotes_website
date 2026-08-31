@@ -1,0 +1,48 @@
+----------------------------------------------------
+Reference for nomenclature [.txt -> html]
+----------------------------------------------------
+A.herm                 A^\dagger              (hermitian conjugate)
+
+H = [a, b ; c, d]      H = \begin{pmatrix}    (matrices)
+                              a & b \\
+                              c & d
+                          \end{pmatrix}
+
+<v|w>                  \langle v|w\rangle     (bra-ket, inner product)
+<v|O|w>                \langle v|O|w\rangle   (bra-ket, with operator)
+|v>                    |v\rangle              (ket)
+
+\de                    \partial               (partial derivative)
+!=                     \neq                   (not equal)
+->  (or =>)            \rightarrow            (arrow / implies)
+<->                    \leftrightarrow
+\def                   \equiv                 (is defined as)
+
+----------------------------------------------------
+Math markup
+----------------------------------------------------
+inline math:            $...$
+displayed equations:    \[ ... \tag{n} \]     (numbered sequentially per page)
+
+----------------------------------------------------
+HTML text entities
+----------------------------------------------------
+->        &rarr;
+--        &ndash;
+---       &mdash;
+"..."     &ldquo;...&rdquo;
+'...'     &lsquo;...&rsquo;
+
+----------------------------------------------------
+Structure
+----------------------------------------------------
+# heading           -> <h2>  (the page title; must match the <title> tag)
+##  heading    -> <h3>
+### heading        -> <h4>
+
+*...* , **...**     -> <b>...</b>
+_..._               -> <em>...</em>
+[Q:/Note:/TBD:...]  -> <code>[<b>Q:/Note:/TBD:</b> ...]</code>
+
+lit-note page numbers -> <b>pg X: </b> at the start of the paragraph
+lit-note citation     -> <blockquote> with doi link; reference path omitted

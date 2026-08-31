@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta charset="utf-8">
+<link href="style.css" rel="stylesheet" type="text/css">
+<title>A primer on Weyl Semimetals (Kar &amp; Jayannavar, 2019)</title>
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" id="MathJax-script"></script>
+</head>
+<body>
+
+<div class="text">
+<div class="left">
+
+<cite><a href="00.Index.html">Full index</a></cite>
+|
+<cite><a href="01.Index.html">Curated index</a></cite>
+<h2>A primer on Weyl Semimetals (Kar &amp; Jayannavar, 2019)</h2>
+
+<hr>
+
+<blockquote>
+S. Kar and A. M. Jayannavar, &ldquo;A primer on Weyl Semimetals: on the discovery of topological phases&rdquo;.
+</blockquote>
+
+<hr>
+
+<p>
+<b>pg5: </b>Chern numbers are defined &mdash; generically &mdash; as integrals over the BZ of the Berry curvature of all the bands of
+the system:
+\[
+\nu = \sum_n \int_{BZ} F_n \ dk \tag{1}
+\]
+where $F_n$ is the <a href="Berry.curvature.as.magnetic.field.html">Berry curvature as a magnetic field</a> of the $n$-th band.
+They are topological invariant, meaning they are robust to adiabatic changes of the hamiltonian.
+</p>
+
+<p>
+The Berry curvature <b>in graphene</b> becomes $0$ when Time reversal and Inversion symmetry are preserved,
+which means that $H(t) = H(-t)$ and $H(r) = H(-r)$.
+When these symmetries are broken, the total surface integral of the Berry potential (ergo the Berry curvature)
+is still zero, but Dirac points (points in k-space where the dispersion is linear) contribute with $\pm \pi$ each.
+</p>
+
+<p>
+<b>pg7: </b>Weyl Semimetals are $3$D analogues of graphene. They are materials in which conduction and valence band touch linearly at
+certain points in k-space.
+There is one big difference with graphene: being $3$D, these hamiltonians look like:
+\[
+H = k_x \sigma_x + k_y \sigma_y + k_z \sigma_z \tag{2}
+\]
+thus there is no way to add a term which gaps the spectrum. This is instead possible with graphene, where
+adding a $\mathrm{const} \ \sigma_z$ term gaps out the spectrum.
+(note that const takes the interpretation of a mass if the theory is viewed through a field theoretic lense).
+</p>
+
+<p>
+<b>pg8: </b>The mass does indeed have an effect in Weyl Semimetals: sending it to zero we get that the hamiltonian, in its most
+general form, commutes with the chirality operator.
+This means that the Weyl fermions have a chirality, either $+1$ or $-1$.
+</p>
+
+<p>
+<b>pg9: </b>When two Weyl points of opposite chirality merge (through perturbation of the hamiltonian) they give rise to a Dirac point,
+which has $0$ chirality.
+</p>
+
+<p>
+The Berry curvature is singular where Weyl points touch &rarr; the WP can be considered as monopoles for the Berry curvature (which
+is defined to begin with in analogy with the magnetic field <a href="Berry.curvature.as.magnetic.field.html">Berry curvature as a magnetic field</a>).
+</p>
+
+<p>
+<b>pg11: </b>Fermi arcs are &mdash; in general &mdash; closed contours in k-space of constant energy (equal to the Fermi energy).
+In the case of WSM they are also joining the projections of the WP on the Fermi energy.
+</p>
+
+</div>
+</div>
+
+</body>
+</html>
