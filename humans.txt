@@ -1,9 +1,4 @@
-This website was coded by me and with the use of various AI's.
-All the AI usage is documented in 'robots.txt', which you may find in the home page.
-
-All the content (words, immages and algorithms) are produced by me.
-                                                                                                      
-                                                 
+This website was created and is mantained by me:
                                                  
                                 |  |  |  |  |  |  |    
                                 ````````````````````                                  
@@ -15,16 +10,15 @@ All the content (words, immages and algorithms) are produced by me.
                         / _        @            @        _,\                                     
                        |   |             |              |  |                                   
                        |  3              |               3 |                                
-                       |                 |                 |                             
-                       |___             \_/             ___|                                
+                       |___              |              ___|   
+                           |            \_/            | 
                            |     .               .     |                                   
                            |      `.___________.'      |                                 
                            |                           |                      
                             \                         /                                 
-                             \                       /                                       
-                              \_____________________/       luca                                      
+                             \_______________________/      luca.                                    
+                                                                   
+
+
                                                                                                      
-                                                                                                      
-                                                                                                      
-                                                                                                      
-                                                                                                      
+

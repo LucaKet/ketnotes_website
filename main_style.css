@@ -13,26 +13,6 @@ body{
   min-width: 0;
 }
 
-.blogroll {
-  width: 220px;
-  flex-shrink: 0;
-  position: sticky;
-  top: 20px;
-  align-self: flex-start;
-  padding-right: 20px;
-  font-size:smaller;
-}
-
-@media (max-width: 768px) {
-  .layout {
-    flex-direction: column;
-  }
-  .blogroll {
-    width: auto;
-    position: static;
-    padding-right: 20px;
-  }
-}
 
 
 .title{
@@ -40,8 +20,8 @@ body{
   width: 100%;
   height: 70px;
   display: block;
-  text-align: left;
-  padding-left: 20px;
+  text-align: center;
+  padding-left: 0px;
   position: relative;
 }
 
@@ -51,25 +31,32 @@ body{
   padding-left: 10px;
   padding-top: 0px;
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
 }
 
 .immagine{
-  width : 80%;
+  width : 100%;
   margin-top: 0px;
   padding-left: 20px;
   display: inline-block;
+  text-align: center;
 }
 
 
 .main{
-  width: 80%;
+  width: 59em;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.list{
+  width: 90%;
   padding-left: 20px;
   padding-right: 10px;
   padding-top: 0px;
   display: inline-block;
+  text-align: left;
 }
-
 nav ul{
   margin: 0;
   padding: 0;
